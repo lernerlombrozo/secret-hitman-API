@@ -264,7 +264,6 @@ exports.createPopulatedGame = (req, res, next) => {
 
 exports.deleteGame = (req, res, next) => {
 	// should also delete it's chat
-	console.log(req.body)
 	const gameId = req.body.gameId;
 	console.log(gameId)
 	const errors = validationResult(req);
