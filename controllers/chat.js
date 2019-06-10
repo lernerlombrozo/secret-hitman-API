@@ -13,7 +13,6 @@ exports.newMessage = (req, res, next) => {
     Chat.findOne({gameId: gameId})
         .then(chat => {
             if(!chat){
-                console.log('noChat')
                 chat = new Chat({
                   gameId: gameId,
                   messages: [
@@ -59,7 +58,6 @@ exports.newHistoryMessage = (req, res, next) => {
 	Chat.findOne({ gameId: gameId })
 		.then(chat => {
 			if (!chat) {
-				console.log('noChat')
 				chat = new Chat({
 					gameId: gameId,
 					messages: [

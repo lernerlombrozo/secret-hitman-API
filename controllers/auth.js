@@ -34,7 +34,6 @@ exports.register = (req, res, next) => {
         }, 'AsEcRetStrINgToImproveSecurITYtheLonGerTHEbettER', {
 				expiresIn: "10h"
             });
-        console.log(result)
         res.status(201).json({
             message: 'User created!!!', 
             token:token,
